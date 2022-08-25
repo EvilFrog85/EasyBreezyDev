@@ -1,0 +1,97 @@
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+@mixin transition($values) {
+    -webkit-transition: $values;
+       -moz-transition: $values;
+            transition: $values;
+}
+
+@mixin user-select($value) {
+    -webkit-touch-callout: $value;
+      -webkit-user-select: $value;
+       -khtml-user-select: $value;
+         -moz-user-select: $value;
+          -ms-user-select: $value;
+              user-select: $value;
+}
+
+@mixin transition-delay($value) {
+    -webkit-transition-delay: $value;
+       -moz-transition-delay: $value;
+         -o-transition-delay: $value;
+            transition-delay: $value;
+}
+
+@mixin box-shadow-default() {
+    -webkit-box-shadow: 0 0 3px #000;
+       -moz-box-shadow: 0 0 3px #000;
+            box-shadow: 0 0 3px #000;
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $spread $color;
+         -moz-box-shadow:inset $top $left $blur $spread $color;
+              box-shadow:inset $top $left $blur $spread $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $spread $color;
+         -moz-box-shadow: $top $left $blur $spread $color;
+              box-shadow: $top $left $blur $spread $color;
+    }
+}
+
+@mixin filter($filter-type, $filter-amount) {
+    -webkit-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+       -moz-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+        -ms-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+         -o-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+            filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+}
+
+@mixin input-apperance($value) {
+    -webkit-appearance: $value;
+       -moz-appearance: $value;
+            appearance: $value;
+}
+
+@mixin linear-gradient($from, $to, $from_percent: 0%, $to_percent: 100%) {
+    background: $to;
+    background: -moz-linear-gradient(top, $from $from_percent, $to $to_percent);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from_percent, $from), color-stop($to_percent, $to));
+    background: -webkit-linear-gradient(top, $from $from_percent,$to $to_percent);
+    background: -o-linear-gradient(top, $from $from_percent,$to $to_percent);
+    background: linear-gradient(to top, $from $from_percent,$to $to_percent);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+@mixin break-words() {
+    /* These are technically the same, but use both */
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+  
+     -ms-word-break: break-all;
+         word-break: break-word;
+  
+     /* Adds a hyphen where the word breaks, if supported (No Blink) */
+     -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+         -ms-hyphens: auto;
+             hyphens: auto;
+}
+
+@mixin white-space-no() {
+    white-space: -moz-nowrap;
+    white-space:   -o-nowrap;
+    white-space:      nowrap;
+}
+@mixin white-space($string) {
+    white-space: -moz-$string;
+    white-space:   -o-$string;
+    white-space:      $string;
+}

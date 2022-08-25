@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700');
+
+body {
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+	/* Firefox need font-weight to specified here again */
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+	font-size: var(--textsize-l);
+	color: var(--clr-text-700);
+	line-height: 1.78;
+	font-weight: 600;
+
+	@media all and (min-width: 520px) {
+		font-size: var(--textsize-m)
+	}
+}
+h3 {
+	font-size: var(--textsize-m);
+	font-weight: 600;
+	color: var(--clr-text-500);
+	text-transform: uppercase;
+
+	@media all and (min-width: 520px) {
+		font-size: var(--textsize-standard)
+	}
+}
+p {
+	font-size: var(--textsize-standard);
+	line-height: 1.43;
+	color: var(--clr-text-400);
+
+	&.smal {
+		font-size: var(--textsixe-s);
+		color: var(--clr-text-300);
+	}
+
+	@media all and (min-width: 520px) {
+		font-size: var(--textsixe-s);
+
+		&.smal {
+			font-size: var(--textsixe-xs);
+			color: var(--clr-text-300);
+		}
+	}
+}
+
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: 600;
+}
+.line-height-1_5 {
+	line-height: 1.5;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.break-word {
+  word-break: break-word;
+}
+.invalid {
+	color: var(--clr-error);
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.mailto {
+	border-bottom: 2px solid var(--clr-primary);
+	text-decoration: none;
+    color: var(--clr-text-600);
+    transition: border .2s linear;
+}
+	.mailto:hover {
+		cursor: pointer;
+		border-bottom: 2px solid var(--clr-complementary);
+		color: var(--clr-text-400);
+	}
+.center-text {
+	text-align: center;
+}
+.truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.not-selectable {
+    @include user-select(none);
+}

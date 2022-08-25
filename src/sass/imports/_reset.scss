@@ -1,0 +1,49 @@
+html, body, h1, h2, h3, h4, p, header, section, footer, aside, ul, ol, li, img, form, input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+ul {
+	margin-left: 20px;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	border: 0;
+	cursor: pointer;
+}
+input:focus, button:focus, select:focus {
+	outline: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: var(--clr-placeholder);
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: var(--clr-placeholder);
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: var(--clr-placeholder) !important;
+	font-weight: 400 !important;
+}
+select::-ms-expand {
+    display: none;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: var(--clr-placeholder);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}

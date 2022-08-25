@@ -1,0 +1,18 @@
+body {
+    background: var(--clr-background);
+}
+table {
+    border-collapse: collapse;
+}
+.noScroll {
+    overflow: hidden;
+}
+.clear-fix {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+.invisible {
+    opacity: 0;
+}
