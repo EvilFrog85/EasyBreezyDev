@@ -1,12 +1,14 @@
 # Local web development environment using TypeScript and SCSS
   
+You have come to right repo if you are new to JavaScript development or are looking for a local dev TypeScript/SCSS boilerplate project.
+
 ### Getting started
   
-1. (Windows user) Install Node Version Manager (NVM) for windows: [link](https://github.com/coreybutler/nvm-windows)
-1. (Other OS)     Install Node Version Manager (NVM): [link](https://github.com/nvm-sh/nvm)
-3. Install any version (LTS recommended) of NodeJS using NVM: [link](https://nodejs.org/en/)
-4. Clone this repo using GIT or download it as a zip-file
-5. In the root folder of this project run `npm install` using any terminal
+1. (Optional - Windows user) Install Node Version Manager (NVM) for windows: [link](https://github.com/coreybutler/nvm-windows)
+1. (Optional - other OS) Install Node Version Manager (NVM): [link](https://github.com/nvm-sh/nvm)
+2. Install any newer version (LTS recommended) of NodeJS using NVM: [link](https://nodejs.org/en/)
+3. Clone this repo using GIT or download it as a zip-file
+4. In the root folder of this project run `npm install` using any terminal
   
   
 ### Develop code - run on localhost
