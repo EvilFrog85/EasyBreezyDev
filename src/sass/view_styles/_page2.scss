@@ -1,3 +1,12 @@
 .demo-table {
     border: 1px solid #000;
+
+    th {
+
+
+        td:first-child {
+            background: #F00;
+            @include break-words();
+        }
+    }
 }
